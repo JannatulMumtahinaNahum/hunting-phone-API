@@ -79,7 +79,7 @@ showDetailsContainer.innerHTML = `
 <p><span class="text-xl">Storage:</span>${phone?.mainFeatures?.storage} </p>
 <p><span class="text-xl">Display Size: </span> ${phone?.mainFeatures?.displaySize}</p>
 <p><span class="text-xl">Memory: </span> ${phone?.mainFeatures?.memory}</p>
-<p><span class="text-xl">GPS:</span>${phone.others?.GPS || 'No GPS available'}</p>
+<p><span  class="text-xl">GPS:</span>${phone.others?.GPS ? phone.others.GPS : 'No GPS available in this device'}</p>
 <p><span class="text-xl">Chipset: </span> ${phone?.mainFeatures?.chipSet}</p>
 <p><span class="text-xl">Slug: </span> ${phone.slug}</p>
 `
